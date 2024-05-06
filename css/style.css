@@ -1,0 +1,305 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: Helvetica;
+    color:seashell;
+    font-size: 22px;
+    background-color: black;
+    opacity:0.9;
+}
+
+.list li{
+    list-style: none;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+nav{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.banner{
+    background-image: url("../images/img-mission-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    opacity: 0.7;
+    object-fit: cover;
+    background-position: 50% 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+.features{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.features h2, .features h4{
+    text-align: center;
+}
+.header h2, .header h4{
+    text-align: center;
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3vw;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform  1s ease-out;
+}
+.cards h5{
+    text-align: center;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+.location{
+    background-image: url("../images/img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    opacity: 0.7;
+    object-fit: cover;
+    background-position: 50% 50%;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.location h2{
+    background: transparent;
+    color: seashell;
+}
+.containers{
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.containers .article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 1s ease-out;
+}
+.containers .article:hover{
+    opacity: 0.5;
+}
+.sectionOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 675px) {
+    *{
+        font-size: 3.26vw;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.148vw solid seashell;
+        align-items: center;
+    }
+    .logo{
+        padding: 1.48vw;
+        padding-right: 0;
+    }
+    .list  {
+        column-gap:2vw;
+
+    }
+    .list li a{
+        transition: text-decoration 1s ease-out;
+        cursor: pointer;
+
+    }
+    .list li a:hover{
+        text-decoration: none;
+    }
+    section.banner{
+        height: 103vw;
+        width:95vw;
+    }
+    .header{
+        padding:2vw 0 ;
+    }
+    .header h2{
+        padding-bottom: 2vw;
+        font-size: 6vw;
+    }
+    .features{
+        margin-top: 12vw;
+        width:80vw
+    }
+    .features h2{
+        padding-bottom: 2vw;
+        font-size: 6vw;
+    }.features h4{
+        padding-bottom: 1.5vw;
+    }
+    .cards{
+        row-gap: 3vw;
+    }
+    .card img{
+        width:44.4vw;
+        height: 29.63vw;
+        object-fit: cover;
+    }
+    .card h5{
+        margin-top: 1.5vw;
+    }
+    .location{
+        width:95vw;
+        margin: 0 auto;
+        margin-top: 3vw;
+        height: 74vw;
+        row-gap: 3vw;
+        padding: 5vw 0;
+    }
+    .location .head{
+        font-size: 6vw;
+    }
+    .containers{
+        column-gap: 5.9vw;
+        row-gap: 5.9vw;
+    }
+    .containers .article{
+        width:44.44vw;
+        padding: 2.22vw 0;
+        row-gap: 5.9vw;
+        transition: opacity 1s ease-out;
+    }
+    footer{
+        padding-top:2vw ;
+        margin-bottom: 6vw;
+        row-gap: 3vw;
+        margin-left: 2.96vw;
+    }
+    .sectionOne   h2{
+        font-size: 6vw;
+        row-gap: 3vw;
+    }
+    .sectionOne {
+        row-gap: 3vw;
+    }
+}
+@media (min-width: 676px) {
+    *{
+        font-size: 1.74vw;
+    }
+    nav{
+        height: 5.45vw;
+        /* padding: 0 0.79vw; */
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.079vw solid seashell;
+    }
+    .logo{
+        margin: 0.79vw;
+        margin-right: 0;
+    }
+    .list {
+        column-gap:2vw;
+    }
+    .list li a{
+        transition: text-decoration 1s ease-out;
+        cursor: pointer;
+    }
+    .list li a:hover{
+        text-decoration: none;
+    }
+    .banner{
+        height: 55.34vw;
+        width:93vw;
+        margin: 0 auto;
+    }
+    .header{
+        padding:2vw 0 ;
+    }
+    .header h2{
+        font-size: 3vw;
+        padding-bottom: 2vw;
+    }
+    .features{
+        width:79vw;
+        margin-top: 6vw;
+    }
+    .features h2{
+        padding-bottom: 2vw;
+        font-size: 3vw;
+    }
+    .features h4{
+        padding-bottom: 1.5vw;
+    }
+    .card img{
+        width:23.72vw;
+        height: 15.81vw;
+        object-fit: cover;
+    }
+    .card h5{
+        margin-top: 1.5vw;
+    }
+    .cards{
+        column-gap: 3vw;
+    }
+    .location{
+        /* height: 29.52vw; */
+        width:93vw;
+        margin: 0 auto;
+        row-gap: 2vw;
+        padding: 6vw 0;
+        margin-top: 2vw;
+    }
+    .location .head{
+        font-size: 3vw;
+    }
+    .containers{
+        column-gap: 3.2vw;
+        row-gap: 3.2vw;
+    }
+    .containers .article{
+        width: 23.72vw;
+        padding: 1.185vw ;
+        row-gap: 3.2vw;
+    }
+    footer{
+        padding-top:2vw ;
+        margin-bottom: 6vw;
+        row-gap: 3.2vw;
+        margin-left: 1.6vw;
+    }
+    .sectionOne   h2{
+        font-size: 3vw;
+    }
+    .sectionOne {
+        row-gap: 3vw;
+    }
+}
